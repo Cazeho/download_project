@@ -6,6 +6,7 @@
 
 ```curl -s https://raw.githubusercontent.com/Cazeho/download_project/main/trivy.sh | sh```
 
+```curl -s https://raw.githubusercontent.com/Cazeho/download_project/main/pam_go.sh | sh```
 
 
 # GITLAB get repo with token
