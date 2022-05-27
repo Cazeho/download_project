@@ -1,9 +1,4 @@
-cd /opt
-wget https://go.dev/dl/go1.18.2.linux-amd64.tar.gz
-tar xvf go1.18.2.linux-amd64.tar.gz
-PATH=$PATH:/opt/go/bin
-export PATH
-GOROOT=/opt/go
-export GOROOT
-GOPATH=/root
-export GOPATH
+cd /opt 
+curl -OL https://golang.org/dl/go1.16.7.linux-amd64.tar.gz
+sudo tar -C /usr/local -xvf go1.16.7.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
