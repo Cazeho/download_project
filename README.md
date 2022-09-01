@@ -1,6 +1,20 @@
-# download_project
+# Docker-ubuntu
 
 ```curl -s https://raw.githubusercontent.com/Cazeho/download_project/main/docker_ubuntu.sh | sh```
+
+
+# Jitsi-docker
+
+```curl -s https://raw.githubusercontent.com/Cazeho/download_project/main/jitsi-docker.sh | sh```
+
+
+# GITLAB get repo with token
+
+
+```git clone https://name-token:token@gitlab.altrnativ.xyz/r.manuel/monitor.git```
+
+
+
 
 ```curl -s https://raw.githubusercontent.com/Cazeho/download_project/main/network.sh | sh```
 
@@ -8,8 +22,3 @@
 
 ```curl -s https://raw.githubusercontent.com/Cazeho/download_project/main/pam_go.sh | sh```
 
-
-# GITLAB get repo with token
-
-
-```git clone https://name-token:token@gitlab.altrnativ.xyz/r.manuel/monitor.git```
