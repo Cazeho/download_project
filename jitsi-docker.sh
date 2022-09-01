@@ -19,3 +19,7 @@ wget $tarball_file
 tar -zxvf $version.tar.gz
 
 rm $version.tar.gz
+
+cd docker-jitsi-meet-$version
+
+cp env.example .env
