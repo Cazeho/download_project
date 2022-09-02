@@ -1,3 +1,5 @@
+# onpenldap
+
 apt install slapd ldap-utils
 
 dpkg-reconfigure slapd
