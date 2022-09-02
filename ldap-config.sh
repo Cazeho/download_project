@@ -1,5 +1,7 @@
 apt install slapd ldap-utils
 
+dpkg-reconfigure slapd
+
 
 
 dn: ou=Users,dc=visio,dc=cazeho,dc=ovh
