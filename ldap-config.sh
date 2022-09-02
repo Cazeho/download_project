@@ -32,3 +32,16 @@ userPassword: password
 
 
 ldapadd -x -D cn=admin,dc=visio,dc=cazeho,dc=ovh -W -f add_content.ldifl
+
+
+
+echo "ENABLE_AUTH=1" >> .env
+echo "AUTH_TYPE=ldap" >> .env
+echo "LDAP_AUTH_METHOD=bind" >> .env
+echo "LDAP_URL=ldap://ldap.root101.net/" >> .env
+echo "LDAP_BINDDN=CN=jitsiuser,OU=ConfAdmins,OU=HumanAccounts,OU=Accounts,DC=root101,DC=lokal" >> .env
+echo "LDAP_BASE=OU=ConfAdmins,OU=HumanAccounts,OU=Accounts,DC=root101,DC=lokal" >> .env
+echo "LDAP_BINDPW=PASSr101" >> .env
+
+
+
