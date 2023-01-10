@@ -13,7 +13,7 @@
 # GITLAB get repo with token
 
 
-```git clone https://name-token:token@gitlab.altrnativ.xyz/r.manuel/monitor.git```
+```git clone https://name-token:token@link/username/monitor.git```
 
 
 
