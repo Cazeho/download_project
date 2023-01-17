@@ -51,7 +51,7 @@ check_install() {
 main () {
     echo "[INFO] installation de docker && docker-compose --> OS : UBUNTU"
 
-    if [ "$(get_distribution)" == "ubuntu" ]; then
+    if [[ "$(get_distribution)" == "ubuntu" ]]; then
         echo "[INFO] is ubuntu distro"
     else
         echo "[FAIL] not ubuntu"
