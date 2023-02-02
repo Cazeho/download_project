@@ -26,6 +26,7 @@ docker_install() {
     dnf update -y > /dev/null
     dnf -y install dnf-plugins-core > /dev/null
     dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo > /dev/null
+    dnf update -y > /dev/null
     
 
     
