@@ -34,7 +34,7 @@ docker_install() {
 
 
 docker_compose_install() {
-     dnf install docker-ce docker-ce-cli containerd.io docker-compose-plugin > /dev/null
+     dnf -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin > /dev/null
 }
 
 
