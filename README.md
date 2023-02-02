@@ -4,6 +4,10 @@
 
 ```curl -s https://raw.githubusercontent.com/Cazeho/download_project/main/docker_ubuntu.sh | bash```
 
+# Docker-Rocky
+
+```curl -s https://raw.githubusercontent.com/Cazeho/download_project/main/docker_rocky.sh | bash```
+
 
 # Jitsi-docker
 
