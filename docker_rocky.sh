@@ -23,19 +23,17 @@ get_distribution() {
 
 
 docker_install() {
-    apt-get update -y > /dev/null
-    apt-get install jq ca-certificates curl gnupg lsb-release -y > /dev/null
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg > /dev/null
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-    apt-get update -y > /dev/null
+    dnf update -y > /dev/null
+    dnf -y install dnf-plugins-core > /dev/null
+    dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo > /dev/null
+    
+
+    
 }
 
 
 docker_compose_install() {
-    apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y > /dev/null
-    version=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | jq -r ".tag_name")
-    curl -SL https://github.com/docker/compose/releases/download/$version/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose &> /dev/null
-    chmod +x /usr/local/bin/docker-compose > /dev/null
+     dnf install docker-ce docker-ce-cli containerd.io docker-compose-plugin > /dev/null
 }
 
 
