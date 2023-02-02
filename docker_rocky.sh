@@ -1,7 +1,7 @@
 
 #!/bin/bash
 
-# Installation de docker sur Rocky Linux 9
+# Installation de docker sur Rocky Linux 9 (define Security)
 
 
 
