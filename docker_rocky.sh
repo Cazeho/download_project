@@ -38,6 +38,7 @@ docker_compose_install() {
      version=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | jq -r ".tag_name")
      curl -SL https://github.com/docker/compose/releases/download/$version/docker-compose-linux-x86_64 -o /usr/bin/docker-compose &> /dev/null
      chmod +x /usr/bin/docker-compose > /dev/null
+     systemctl start docker
 }
 
 
