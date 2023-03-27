@@ -1,5 +1,7 @@
+$user = $env:USERNAME
+
 $url = "https://media.cdn.teamtailor.com/images/s3/teamtailor-production/user_picture_1200-v5/image_uploads/1bca5182-3f71-490e-b17d-a314e947ed1d/original.png"
-$outputDir = "C:\Users\vagrant\Pictures"
+$outputDir = "C:\Users\$user\Pictures"
 $outputPath = Join-Path $outputDir "original.png"
 
 # Download the image using wget
@@ -13,7 +15,7 @@ if (Test-Path $outputPath) {
 }
 
 
-$user = $env:USERNAME
+
 
 $ImagePath = "C:\Users\$user\Pictures\original.png"
 $RegKey = "HKCU:\Control Panel\Desktop"
