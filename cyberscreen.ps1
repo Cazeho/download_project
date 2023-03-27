@@ -7,13 +7,6 @@ $outputPath = Join-Path $outputDir "original.png"
 # Download the image using wget
 wget $url -OutFile $outputPath
 
-# Verify that the file was downloaded
-if (Test-Path $outputPath) {
-    Write-Host "Image downloaded successfully to: $outputPath"
-} else {
-    Write-Host "Failed to download image"
-}
-
 
 
 
@@ -31,13 +24,14 @@ Set-ItemProperty -Path $RegKey -Name WallpaperTile -Value 0
 Set-ItemProperty -Path $RegKey -Name $RegValue -Value $ImagePath
 
 
-$RegKey = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization"
-$RegValue = "LockScreenImage"
 
-# Set the lock screen image
-Set-ItemProperty -Path $RegKey -Name $RegValue -Value $ImagePath
+$regKey = 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization'
+# create the key if it doesn't already exist
+if (!(Test-Path -Path $regKey)) {
+   $null = New-Item -Path $regKey
+}
 
-gpupdate /force
+Set-ItemProperty -Path $regKey -Name LockScreenImage -value $ImagePath
 
 
 # Refresh the desktop
