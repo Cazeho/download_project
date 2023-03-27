@@ -11,5 +11,15 @@ Set-ItemProperty -Path $RegKey -Name WallpaperTile -Value 0
 # Set the wallpaper image
 Set-ItemProperty -Path $RegKey -Name $RegValue -Value $ImagePath
 
+
+$RegKey = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization"
+$RegValue = "LockScreenImage"
+
+# Set the lock screen image
+Set-ItemProperty -Path $RegKey -Name $RegValue -Value $ImagePath
+
+gpupdate /force
+
+
 # Refresh the desktop
 RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
