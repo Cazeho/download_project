@@ -15,7 +15,7 @@ $RegKey = "HKCU:\Control Panel\Desktop"
 $RegValue = "Wallpaper"
 
 # Set the wallpaper style
-Set-ItemProperty -Path $RegKey -Name WallpaperStyle -Value 1
+Set-ItemProperty -Path $RegKey -Name WallpaperStyle -Value 2
 
 # Set the wallpaper to stretch to fit the screen
 Set-ItemProperty -Path $RegKey -Name WallpaperTile -Value 0
