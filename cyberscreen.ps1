@@ -1,4 +1,6 @@
-$ImagePath = "C:\Users\vagrant\Pictures\original.png"
+$user = $env:USERNAME
+
+$ImagePath = "C:\Users\$user\Pictures\original.png"
 $RegKey = "HKCU:\Control Panel\Desktop"
 $RegValue = "Wallpaper"
 
