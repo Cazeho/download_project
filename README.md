@@ -14,6 +14,10 @@
 ```curl -s https://raw.githubusercontent.com/Cazeho/download_project/main/jitsi-docker.sh | sh```
 
 
+# CME
+
+```curl -s https://raw.githubusercontent.com/Cazeho/download_project/main/cme_install.sh | bash ```
+
 # GITLAB get repo with token
 
 
