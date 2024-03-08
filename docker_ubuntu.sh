@@ -51,13 +51,7 @@ check_install() {
 main () {
     echo "[INFO] installation de docker && docker-compose --> OS : UBUNTU"
 
-    if [[ "$(get_distribution)" == "ubuntu" ]]; then
-        echo "[INFO] is ubuntu distro"
-    else
-        echo "[FAIL] not ubuntu"
-        exit 1
-    fi
-
+    
     if [[ $EUID -ne 0 ]]; then
         echo "[FAIL] This script must be run as root or with sudo privileges" 
         exit 1
