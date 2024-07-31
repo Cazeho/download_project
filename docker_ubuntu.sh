@@ -2,7 +2,7 @@
 
 # Installation de docker sur UBUNTU 22.04
 
-
+apt install jq -y
 
 #fingerprint
 
